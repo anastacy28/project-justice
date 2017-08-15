@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'shopy';
+  src:  url('fonts/shopy.eot?rqcodw');
+  src:  url('fonts/shopy.eot?rqcodw#iefix') format('embedded-opentype'),
+    url('fonts/shopy.ttf?rqcodw') format('truetype'),
+    url('fonts/shopy.woff?rqcodw') format('woff'),
+    url('fonts/shopy.svg?rqcodw#shopy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'shopy' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart-icon6:before {
+  content: "\e90a";
+}
+.icon-planet:before {
+  content: "\e907";
+}
+.icon-twit:before {
+  content: "\e902";
+}
+.icon-cart:before {
+  content: "\e903";
+}
+.icon-search:before {
+  content: "\e904";
+}
+.icon-user:before {
+  content: "\e905";
+}
+.icon-cart2:before {
+  content: "\e909";
+}
+.icon-user2:before {
+  content: "\e908";
+}
+.icon-heart-o:before {
+  content: "\e906";
+}
+.icon-slick-prev:before {
+  content: "\e90b";
+}
+.icon-google:before {
+  content: "\e900";
+}
+.icon-instagram:before {
+  content: "\e901";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}

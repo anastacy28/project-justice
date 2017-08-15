@@ -1,0 +1,37 @@
+.row {
+  margin: 0 -12px; }
+
+.cards-product {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.card-product {
+  font-family: "OpenSans Light", sans-serif;
+  padding: 0 12px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33%;
+  margin-bottom: 52px; }
+  .card-product .card-title {
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 2%; }
+  .card-product .card-description {
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 8%; }
+
+@media (max-width: 700px) {
+  .card-product {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+    .card-product .card-header {
+      margin-right: 20px; } }

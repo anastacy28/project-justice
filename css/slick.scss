@@ -1,0 +1,89 @@
+$header-footer-color: #888;
+$general-font-size: 16px;
+$color-title: #fff;
+$main-color: #999;
+$font-slick-title: 36px;
+$background-color: #000;
+
+.slick {
+  display: block;
+  width: 100%;
+  .slick-next {
+    right: 7%;
+}
+.slick-prev {
+	left: 7%;
+	z-index: 100;
+}
+  .slick-dots {
+  	 bottom: 20px;
+  }
+  li {
+  	 border: 2px solid #fff;
+     border-radius: 16px;
+  }
+}
+.slick-dots li.slick-active button::before,
+.slick-dots li button::before {
+    color:#fff;
+    height: 20px;
+    left: -7%;
+    font-size: 18px;
+}
+
+.slick-item {
+	position: relative;
+	background-size: cover;
+	display: block;
+	height: 40vw;
+}
+
+.text-holder {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 33%;
+    text-transform: uppercase;
+     .slick-title {
+    font-size: $font-slick-title;
+    margin-bottom: 3%; 
+    color: $color-title;
+   } 
+   .slick-action {
+	font-size: 20px;
+	font-family: "OpenSans Bold", sans-serif;
+	color: $color-title;
+  }
+}
+
+@media (max-width: 700px) {
+ .slick.slick-dots {
+  	 bottom: 6px;
+  }
+
+  .slick .text-holder .slick-title {
+     	font-size: 20px;
+  }
+
+  
+.slick .slick-dots li {
+	width: 13px;
+	height: 13px;
+}
+
+.slick .slick-dots li.slick-active button::before, .slick .slick-dots li button::before {
+    color: #fff;
+    font-size: 10px;
+    height: 12px;
+    left: -51%;
+    top: -46%
+}
+}
+      
+
+
+
+

@@ -1,0 +1,69 @@
+.slick {
+  display: block;
+  width: 100%; }
+  .slick .slick-next {
+    right: 7%; }
+  .slick .slick-prev {
+    left: 7%;
+    z-index: 100; }
+  .slick .slick-dots {
+    bottom: 20px; }
+  .slick li {
+    border: 2px solid #fff;
+    border-radius: 16px; }
+
+.slick-dots li.slick-active button::before,
+.slick-dots li button::before {
+  color: #fff;
+  height: 20px;
+  left: -7%;
+  font-size: 18px; }
+
+.slick-item {
+  position: relative;
+  background-size: cover;
+  display: block;
+  height: 40vw; }
+
+.text-holder {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 33%;
+  text-transform: uppercase; }
+  .text-holder .slick-title {
+    font-size: 36px;
+    margin-bottom: 3%;
+    color: #fff; }
+  .text-holder .slick-action {
+    font-size: 20px;
+    font-family: "OpenSans Bold", sans-serif;
+    color: #fff; }
+
+@media (max-width: 700px) {
+  .slick.slick-dots {
+    bottom: 6px; }
+  .slick .text-holder .slick-title {
+    font-size: 20px; }
+  .slick .slick-dots li {
+    width: 13px;
+    height: 13px; }
+  .slick .slick-dots li.slick-active button::before, .slick .slick-dots li button::before {
+    color: #fff;
+    font-size: 10px;
+    height: 12px;
+    left: -51%;
+    top: -46%; } }

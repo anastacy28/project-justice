@@ -1,0 +1,7 @@
+.button {
+  display: block;
+  padding: 12px 14px;
+  background: #000;
+  max-width: 96px; }
+  .button a {
+    color: #fff; }
