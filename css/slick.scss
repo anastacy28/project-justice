@@ -2,40 +2,47 @@ $header-footer-color: #888;
 $general-font-size: 16px;
 $color-title: #fff;
 $main-color: #999;
-$font-slick-title: 36px;
-$background-color: #000;
+$font-slick-title: 25px;
+$brand-color: #000;
 
 .slick {
   display: block;
   width: 100%;
-  .slick-next {
+  .slick-next,
+  .slick-prev {
     right: 7%;
+    z-index: 100;
+    top: 51%;
 }
 .slick-prev {
 	left: 7%;
-	z-index: 100;
+
 }
   .slick-dots {
   	 bottom: 20px;
   }
   li {
-  	 border: 2px solid #fff;
+  	 border: 3px solid #fff;
      border-radius: 16px;
+     width: 16px;
+     height: 16px;
+     margin: 0 8px;
   }
 }
 .slick-dots li.slick-active button::before,
 .slick-dots li button::before {
     color:#fff;
     height: 20px;
-    left: -7%;
-    font-size: 18px;
+    left: -33%;
+    font-size: 15px;
+    top: -4px;
 }
 
 .slick-item {
 	position: relative;
 	background-size: cover;
 	display: block;
-	height: 40vw;
+	height: 33.2vw;
 }
 
 .text-holder {
@@ -50,14 +57,42 @@ $background-color: #000;
      .slick-title {
     font-size: $font-slick-title;
     margin-bottom: 3%; 
+    font-family: "OpenSans SemiBold", sans-serif;
     color: $color-title;
+    line-height: $font-slick-title +62px;
    } 
+   .border-bottom {
+    display: block;
+    margin-bottom: 18px;
+   }
    .slick-action {
 	font-size: 20px;
 	font-family: "OpenSans Bold", sans-serif;
 	color: $color-title;
   }
 }
+
+
+/*second-slick*/
+.second-slick {
+  background-size: cover;
+  width: 100%;
+  height: 10vw;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.second-slick-item {
+  display: flex;
+  padding: 45px 0;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@media (max-width: 800px) {
+ .slick .text-holder {
+     top:20px;
+   }
 
 @media (max-width: 700px) {
  .slick.slick-dots {
@@ -68,7 +103,6 @@ $background-color: #000;
      	font-size: 20px;
   }
 
-  
 .slick .slick-dots li {
 	width: 13px;
 	height: 13px;
@@ -80,8 +114,16 @@ $background-color: #000;
     height: 12px;
     left: -51%;
     top: -46%
+ }
 }
-}
+
+@media (max-width: 540px) {
+  .text-holder {
+     top: 10px;
+     .slick-title {
+      line-height: 20px;
+     }
+   }
       
 
 

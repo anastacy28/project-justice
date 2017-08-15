@@ -1,7 +1,9 @@
 .button {
   display: block;
-  padding: 12px 14px;
+  padding: 9px 4px;
   background: #000;
-  max-width: 96px; }
-  .button a {
-    color: #fff; }
+  max-width: 96px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px; }

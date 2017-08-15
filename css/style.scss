@@ -1,0 +1,79 @@
+@import "variables";
+
+@font-face {
+  font-family: 'justice';
+  src:  url('../#{$icomoon-font-path}/justice.eot?4bfb80');
+  src:  url('../#{$icomoon-font-path}/justice.eot?4bfb80#iefix') format('embedded-opentype'),
+    url('../#{$icomoon-font-path}/justice.ttf?4bfb80') format('truetype'),
+    url('../#{$icomoon-font-path}/justice.woff?4bfb80') format('woff'),
+    url('../#{$icomoon-font-path}/justice.svg?4bfb80#justice') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'justice' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart-icon6 {
+  &:before {
+    content: $icon-cart-icon6;
+  }
+}
+.icon-planet {
+  &:before {
+    content: $icon-planet;
+  }
+}
+.icon-twit {
+  &:before {
+    content: $icon-twit;
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search;
+  }
+}
+.icon-user2 {
+  &:before {
+    content: $icon-user2;
+  }
+}
+.icon-cart2 {
+  &:before {
+    content: $icon-cart2;
+  }
+}
+.icon-slick-prev {
+  &:before {
+    content: $icon-slick-prev;
+  }
+}
+.icon-google {
+  &:before {
+    content: $icon-google;
+  }
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram;
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;
+  }
+}
+

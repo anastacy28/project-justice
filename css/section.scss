@@ -4,12 +4,13 @@ $color-title: #fff;
 $main-color: #999;
 $font-slick-title: 36px;
 $brand-color: #000;
+$background-color: #000;
 
 .section {
-	padding-top: 47px;
+	padding-top: $general-font-size;
 	.section-title {
          font-size: 32px;
-         margin-bottom: 24px;
+         margin-bottom:  $general-font-size;
          color: $background-color;
 	}
 }

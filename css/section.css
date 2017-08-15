@@ -1,6 +1,6 @@
 .section {
-  padding-top: 4%; }
+  padding-top: 16px; }
   .section .section-title {
     font-size: 32px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     color: #000; }

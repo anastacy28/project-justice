@@ -2,61 +2,7 @@
 @import url("section.scss");
 @import url("navbar.scss");
 @import url("slick.scss");
-@font-face {
-  font-family: 'shopy';
-  src: url("../images/fonts/shopy.eot?auflqa");
-  src: url("../images/fonts/shopy.eot?auflqa#iefix") format("embedded-opentype"), url("../images/fsonts/shopy.ttf?auflqa") format("truetype"), url("../images/fonts/shopy.woff?auflqa") format("woff"), url("../images/fonts/shopy.svg?auflqa#shopy") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'shopy' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-cart2:before {
-  content: "\e909"; }
-
-.icon-user2:before {
-  content: "\e908"; }
-
-.icon-planet:before {
-  content: "\e907"; }
-
-.icon-twit:before {
-  content: "\e902"; }
-
-.icon-cart:before {
-  content: "\e903"; }
-
-.icon-search:before {
-  content: "\e904"; }
-
-.icon-user:before {
-  content: "\e905"; }
-
-.icon-heart-o:before {
-  content: "\e906"; }
-
-.icon-instagram:before {
-  content: "\e901"; }
-
-.icon-google:before {
-  content: "\e900"; }
-
-.icon-instagram:before {
-  content: "\e901"; }
-
-.icon-facebook:before {
-  content: "\ea90"; }
 
 body {
   margin: 0;

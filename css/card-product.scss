@@ -17,15 +17,23 @@ $brand-color: #000;
 	box-sizing: border-box;
 	width: 33.33%;
 	margin-bottom: 52px;
+	.img-box {
+		margin-bottom: $general-font-size;
+	}
+	.card-body {
+		padding-left: 21px; 
+	}
 	.card-title {
 		font-size: $general-font-size + 14px;
 		color: $brand-color;
-		margin-bottom: 2%;
+		margin-bottom: 13px;
 	}
 	.card-description {
 		font-size: $general-font-size;
 		color: $main-color;
-		margin-bottom: 8%;
+		margin-bottom: 21px;
+		line-height: 23px;
+
 	}
 }
 
@@ -38,3 +46,14 @@ $brand-color: #000;
     	}
     }
 }
+@media (max-width: 568px) {
+    .card-product {
+    	display: flex;
+    	width: 100%;
+    	flex-direction: column;
+    	.card-header {
+    		margin: 0 auto;
+    	}
+    }
+}
+
