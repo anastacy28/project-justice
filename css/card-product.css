@@ -39,15 +39,14 @@
     display: flex;
     width: 100%; }
     .card-product .card-header {
-      margin-right: 20px; } }
+      margin-right: 2px; } }
 
-@media (max-width: 568px) {
+@media (max-width: 600px) {
   .card-product {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;

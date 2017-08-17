@@ -44,8 +44,8 @@
                   <div class="navbar-nav">
                   <a href="#" class="navbar-toggler">Menu</a>
                      <ul class="navbar-collapse">
-                         <li><a class="active" href="index.html">New</a></li>
-                         <li><a href="men.html">Men</a></li>
+                         <li><a class="active" href="#">New</a></li>
+                         <li><a href="#">Men</a></li>
                          <li><a href="#">Women</a></li>
                          <li><a href="#">Sale</a></li>
                      </ul>
@@ -63,7 +63,7 @@
           </header>
     <main>
         <div class="slick">
-            <div class="slick-item" style="background-image: url(images/slick-img1.jpg)">
+            <div class="slick-item" style="background-image: url(images/slick-img3.jpg)">
                   <div class="container">
                         <div class="text-holder">
                                <div class="slick-title">
@@ -141,7 +141,57 @@
          </div> <!--close slick-->   
 <div class="section">
    <div class="container">
-     <div class="section-title">This Week </div>
+     <div class="section-title">HOODIES & SWEATSHIRTS</div>
+       <div class="section-description">
+            You can't have too many hoodies and sweatshirts. Our collection brings together our favourites, from simple black sweatshirts and plain 
+hoodies to exclusives from Champion, adidas Originals and Nike Tech Fleece.
+       </div>
+</section>
+<div class="main-content">
+<div class="sidebar">
+     <div class="sidebar-title"><a class="r-more" href="#open1" onclick="show('hidden_1',180,5)">Brands</div>
+       <div id=hidden_1 style="display:none;"> <div class="sidebar-box">
+          <div class="box-category">
+             <div class="title-category adidas">Adidas</div>
+               <ul class="list-category list-adidas">
+                    <li>Carhartt</li>
+                    <li>Carhartt</li>
+                    <li>Carhartt</li>
+               </ul>
+
+          </div>
+          <div class="box-category">
+             <div class="title-category adidas-or">Adidas Originals</div>
+               <ul class="list-category list-adidas-or">
+                    <li>Carhartt</li>
+                    <li>Carhartt</li>
+                    <li>Carhartt</li>
+               </ul>
+          </div>
+          <div class="box-category">
+             <div class="title-category drmtm">DRMTM</div>
+               <ul class="list-category list-drmtm">
+                    <li>Carhartt</li>
+                    <li>Carhartt</li>
+                    <li>Carhartt</li>
+               </ul>
+          </div>
+       </div>
+    </div>
+
+   <div class="box-category"> 
+       <div class="sidebar-title size">Size</div>
+       <ul class="list-sizes"> 
+           <li><a href="#">XS</a></li>
+           <li><a href="#">S</a></li>
+           <li><a href="#">M</a></li>
+           <li><a href="#">L</a></li>
+           <li><a href="#">XL</a></li>
+       </ul>
+   </div>
+</div>
+<!--content-page-->
+<div class="content-page">
       <div class="cards-product row">
          <div class="card-product">
             <div class="card-header">
@@ -307,6 +357,7 @@
     </div>
 </div>
 </div>
+</div>
 <div class="section">
 <div class="container">
 <div class="section-title">Brands </div>
@@ -454,18 +505,37 @@
        fade: true
        });
     </script>
-    <script>
-      $('.second-slick-item').slick({
-       infinite: true,
-       autoplay: true,
-       autoplaySpeed: 100000,
-       slidesToShow: 6,
-       slidesToScroll: 1,
-       dots: false,
-       pauseOnHover: true,
-       arrows: true,
-       fade: true
-       });
-    </script>
+    <script type="text/javascript">
+     $('.adidas').click(function(){
+       $('.list-adidas').slideToggle("active");
+    });
+     $('.adidas-or').click(function(){
+       $('.list-adidas-or').slideToggle("active");
+    });
+     $('.drmtm').click(function(){
+       $('.list-drmtm').slideToggle("active");
+    });
+      $('.size').click(function(){
+       $('.list-sizes').slideToggle("active");
+    });
+  </script> 
+ <script language="JavaScript" type="text/javascript">
+ /*<![CDATA[*/
+ var s=[],s_timer=[];
+ function show(id,h,spd)
+ { s[id]= s[id]==spd? -spd : spd;
+ s_timer[id]=setTimeout(function() {
+ var obj=document.getElementById(id);
+ if(obj.offsetHeight+s[id]>=h){obj.style.height=h+"px";obj.style.overflow="auto";}
+ else if(obj.offsetHeight+s[id]<=0){obj.style.height=0+"px";obj.style.display="none";}
+ else {obj.style.height=(obj.offsetHeight+s[id])+"px";
+ obj.style.overflow="hidden";
+ obj.style.display="block";
+ setTimeout(arguments.callee, 10);
+ }
+ }, 10);
+ }
+ /*]]>*/
+ </script>
   </body>
 </html>

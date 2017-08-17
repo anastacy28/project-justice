@@ -33,7 +33,7 @@ $main-color: #999;
 
 .navbar-collapse li,
 .social li {
-	padding: 0 30px;
+	margin-right: 30px;
 	 a {
 	 	color: $header-footer-color;
 	 }
@@ -74,3 +74,12 @@ $main-color: #999;
     	flex-direction: row-reverse;
     }
  }
+
+ @media (max-width: 400px) {
+	.navbar {
+       flex-direction: column;
+       .navbar-left {
+           margin-bottom: 20px;
+       }
+	}
+	}

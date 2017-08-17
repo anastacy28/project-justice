@@ -4,6 +4,17 @@
 @import url("slick.scss");
 @import url("button.scss");
 
+
+@font-face {
+  font-family: 'OpenSansLight-Italic';
+  src: url('../fonts/italic/OpenSansLight-Italic.eot?#iefix') format('embedded-opentype'), 
+   url('../fonts/italic/OpenSansLight-Italic.woff') format('woff'), 
+   url('../fonts/italic/OpenSansLight-Italic.ttf')  format('truetype'), 
+   url('../fonts/italic/OpenSansLight-Italic.svg#OpenSansLight-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $header-footer-color: #888;
 $general-font-size: 55px;
 $color-title: #fff;
@@ -69,6 +80,7 @@ $main-color: #999;
 body {
     margin: 0;
     font-family: 'OpenSans', sans-serif;
+    color: $main-color;
 }
 
 html {
@@ -123,4 +135,39 @@ body {
 	display: flex;
 	top: 0;
 }
+*/
 
+.send-email {
+  padding: 10px 0;
+  font-family: 'OpenSansLight-Italic', sans-serif;
+}
+/*footer*/
+.footer {
+   padding: 93px 0;
+.footer-body {
+  display: flex;
+  justify-content: space-between;
+  }
+    .footer-column {
+      width: 25%;
+    }
+}
+
+.footer-title {
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.list-column li {
+  margin-bottom: 18px;
+}
+ .social {
+      display: flex;
+    }
+
+@media (max-width: 800px) {
+   .footer-column {
+       width: 50%;
+    }
+}
